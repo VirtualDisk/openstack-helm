@@ -31,7 +31,7 @@ release_group: null
 
 # NOTE(gagehugo): the pre-install hook breaks upgrade for helm2
 # Set to false to upgrade using helm2
-helm3_hook: true
+helm3_hook: false
 
 images:
   tags:
@@ -220,12 +220,12 @@ pod:
     keystone:
       enabled: false
       tolerations:
-      - key: node-role.kubernetes.io/master
-        operator: Exists
-        effect: NoSchedule
-      - key: node-role.kubernetes.io/control-plane
-        operator: Exists
-        effect: NoSchedule
+        - key: node-role.kubernetes.io/master
+          operator: Exists
+          effect: NoSchedule
+        - key: node-role.kubernetes.io/control-plane
+          operator: Exists
+          effect: NoSchedule
   mounts:
     keystone_db_init:
       init_container: null
@@ -842,7 +842,7 @@ conf:
         - default
     logger_root:
       level: WARNING
-      handlers: 'null'
+      handlers: "null"
     logger_keystone:
       level: INFO
       handlers:
@@ -1064,7 +1064,7 @@ endpoints:
       default: null
     path:
       default: null
-    scheme: 'http'
+    scheme: "http"
     port:
       service:
         default: 24224
@@ -1130,4 +1130,3 @@ manifests:
   secret_registry: true
   service_ingress_api: true
   service_api: true
-...
