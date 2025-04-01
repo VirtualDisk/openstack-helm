@@ -35,6 +35,7 @@ memcached:
 keystone:
   release_group: keystone
   enabled: true
+  helm3_hook: true
 
 heat:
   release_group: heat
@@ -77,4 +78,3 @@ neutron:
     auto_bridge_add:
       # no idea why, but something with sub-charts and null values get ommitted entirely from sub chart
       br-ex: "null"
-...
