@@ -35,7 +35,7 @@ memcached:
 keystone:
   release_group: keystone
   enabled: true
-  helm3_hook: true
+  helm3_hook: false
 
 heat:
   release_group: heat
