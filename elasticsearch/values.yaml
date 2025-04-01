@@ -904,7 +904,7 @@ storage:
       access_mode: ["ReadWriteOnce"]
     requests:
       storage: 5Gi
-    storage_class: general
+    storage_class: openebs-hostpath
   master:
     enabled: true
     pvc:
@@ -912,7 +912,7 @@ storage:
       access_mode: ["ReadWriteOnce"]
     requests:
       storage: 1Gi
-    storage_class: general
+    storage_class: openebs-hostpath
   s3:
     clients: {}
     # These values configure the s3 clients section of elasticsearch.yml

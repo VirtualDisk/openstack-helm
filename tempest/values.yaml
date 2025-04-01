@@ -279,7 +279,7 @@ pvc:
   name: pvc-tempest
   requests:
     storage: 2Gi
-  storage_class: general
+  storage_class: openebs-hostpath
 
 secrets:
   identity:

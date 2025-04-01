@@ -320,7 +320,7 @@ pvc:
   name: pvc-rally
   requests:
     storage: 2Gi
-  storage_class: general
+  storage_class: openebs-hostpath
 
 conf:
   rally:

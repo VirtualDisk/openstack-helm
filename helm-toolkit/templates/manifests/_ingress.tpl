@@ -70,7 +70,7 @@ examples:
           nginx.ingress.kubernetes.io/rewrite-target: /
 
       spec:
-        ingressClassName: "nginx"
+        ingressClassName: "ingress-nginx-int"
         rules:
           - host: barbican
             http:
@@ -111,7 +111,7 @@ examples:
           nginx.ingress.kubernetes.io/rewrite-target: /
 
       spec:
-        ingressClassName: "nginx"
+        ingressClassName: "ingress-nginx-int"
         tls:
           - secretName: barbican-tls-public
             hosts:
@@ -205,7 +205,7 @@ examples:
           nginx.ingress.kubernetes.io/rewrite-target: /
 
       spec:
-        ingressClassName: "nginx"
+        ingressClassName: "ingress-nginx-int"
         tls:
           - secretName: barbican-tls-public
             hosts:
@@ -307,7 +307,7 @@ examples:
           nginx.ingress.kubernetes.io/backend-protocol: https
           nginx.ingress.kubernetes.io/secure-backends: "true"
       spec:
-        ingressClassName: "nginx"
+        ingressClassName: "ingress-nginx-int"
         tls:
           - secretName: barbican-tls-public-certmanager
             hosts:
@@ -409,7 +409,7 @@ examples:
           nginx.ingress.kubernetes.io/backend-protocol: https
           nginx.ingress.kubernetes.io/secure-backends: "true"
       spec:
-        ingressClassName: "nginx"
+        ingressClassName: "ingress-nginx-int"
         tls:
           - secretName: barbican-tls-public-certmanager
             hosts:
@@ -491,7 +491,7 @@ examples:
           nginx.ingress.kubernetes.io/rewrite-target: /
 
       spec:
-        ingressClassName: "nginx"
+        ingressClassName: "ingress-nginx-int"
         rules:
           - host: grafana
             http:
@@ -532,7 +532,7 @@ examples:
           nginx.ingress.kubernetes.io/rewrite-target: /
 
       spec:
-        ingressClassName: "nginx"
+        ingressClassName: "ingress-nginx-int"
         tls:
           - secretName: grafana-tls-public
             hosts:

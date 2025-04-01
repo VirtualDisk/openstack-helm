@@ -318,7 +318,7 @@ storage:
     access_mode: ["ReadWriteOnce"]
   requests:
     storage: 5Gi
-  storage_class: general
+  storage_class: openebs-hostpath
 
 manifests:
   certificates: false
